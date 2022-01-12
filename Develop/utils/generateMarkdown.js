@@ -2,7 +2,7 @@ function generateMarkdown(data) {
   return ` 
    ${data.badge}
    # ${data.projectname}
-   ## ${data.githubusername}
+   ## ${data.github}
    
    ## Description 
    
