@@ -1,4 +1,4 @@
-   [![License: MIT](https://img.https://shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+   [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
    ## Link to video
    https://youtu.be/9IJs1KJ_D_E
 
@@ -39,7 +39,7 @@
    
    ## Questions
    
-   Feel free to reach me out at my email with any
+   Feel free to reach me out at my email with any questions
 
    https://github.com/malakhavam/readme-generator
    
