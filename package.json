@@ -1,22 +1,14 @@
 {
-  "name": "readme-generator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "[How to create a Professional README](./readme-guide.md)",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/malakhavam/readme-generator.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/malakhavam/readme-generator/issues"
-  },
-  "homepage": "https://github.com/malakhavam/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^6.3.1"
   }
 }

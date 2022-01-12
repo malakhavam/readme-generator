@@ -1,10 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./Develop/utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
         {
             type: "input",
             name: "github",
@@ -20,13 +19,13 @@ const questions = () => {
             },
           {
             type: "input",
-            name: "e-mail",
-            message: "What is your e-mail?",
+            name: "e_mail",
+            message: "What is your e_mail?",
             },
           {
             type: "input",
-            name: "project_name",
-            message: "What is the name of your project?", 
+            name: "projectname",
+            message: "What is your project's name?", 
             },
           {
             type: "input",
@@ -41,18 +40,18 @@ const questions = () => {
           {
             type: "input",
             name: "usage",
-            message: "Please, provide instructions for use",
+            message: "Please, provide any specific instructions for app usage",
            },
           {
             type: "list",
             name: "license",
-            message: "Please, choose the license",
+            message: "Please, choose your license",
             choices: ["MIT", "EPL v2" , "GNU GPL v2", "Apache-2.0"],
            },
           {
             type: "input",
             name: "collaborators",
-            message: "Please, put names of your collaborators",
+            message: "Please, list the names of your collaborators, if any",
             },
           {
             type: "input",
@@ -64,8 +63,8 @@ const questions = () => {
             name: "questions",
             message: "Please, list frequently asked questions and your reach out information",
           }
-    ]);
-};
+    ];
+
 
 
 // TODO: Create a function to write README file
@@ -88,11 +87,13 @@ inquirer.prompt(questions)
     badge ="[![License: MPL 2.0](https://img.https://shields.io/badge/License-EPL%202.0-pink.svg.svg)](https://https://opensource.org/licenses/EPL-2.0)"     
   }else if(answers.license === "GNU GPL v2"){
     badge ="[![License: GPL v2](https://img.shields.io/badge/License-GPLv2-blue.svg)](https://www.https://opensource.org/licenses/GPL-2.0)"
-  }else{
+  }else
+  {
   badge ="[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
   }
+
   //write README
- writeToFile("text.md",{...answers, badge}  )
+ writeToFile("Readme.md",{...answers, badge}  )
 
 });
 }
